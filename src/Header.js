@@ -7,12 +7,23 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import MessageIcon from '@mui/icons-material/Message';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Header() {
   return (
     <div className='header'>
       <div className='header__left'>
-       <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.EweiZI5x1TFwSg9aJw6pZgHaHa%26pid%3DApi&f=1" alt = ""></img>
+        <div className='header__icon'>
+        <LinkedInIcon 
+        sx={{
+          color: "#378fe9",
+           width:"3.35rem",
+           height:"3.35rem",
+        }}
+        />
+        </div>
+        
+
 
            <div className='header__search'>
              <SearchIcon />
