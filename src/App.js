@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="app">
       <Header />
-      {/*AppBody*/}
       <div className='app__body'>
         <Sidebar />
         <Feed />
