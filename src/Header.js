@@ -8,8 +8,18 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import MessageIcon from '@mui/icons-material/Message';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { useDispatch, useSelector } from 'react-redux';
+import { auth } from './firebase';
+import { logout, selectUser } from './features/userSlice';
 
 function Header() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+  const logoutOfApp = () =>{
+    dispatch(logout());
+    auth.signOut();
+  };
+
   return (
     <div className='header'>
       <div className='header__left'>
@@ -37,7 +47,12 @@ function Header() {
            <HeaderOption Icon ={BusinessCenterIcon} title ="Jobs"/>
            <HeaderOption Icon ={MessageIcon} title="Messaging"/>
            <HeaderOption Icon ={NotificationsActiveIcon} title="Notifications"/>
-            <HeaderOption avatar="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fmodules%2Fopen_graph%2Fgithub-mark.png&f=1&nofb=1" />
+            <HeaderOption 
+            avatar={true} 
+            title ="me"
+             onClick = {logoutOfApp} 
+             />
+           
       </div>
     </div>
   );
