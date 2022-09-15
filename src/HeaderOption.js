@@ -12,7 +12,7 @@ function HeaderOption({ avatar, Icon , title, onClick }) {
         {Icon && <Icon className='headerOption__icon' />}
         {avatar && (
         <Avatar className = "headerOption__icon">
-          {user?.email[0]}
+          J
         </Avatar> 
         
         )}
