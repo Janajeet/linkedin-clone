@@ -1,6 +1,6 @@
 # LinkedIn Clone
 Creating a LinkedIn UI clone.
-![LinkedIn UI](https://drive.google.com/file/d/1CEm2ed5WUD4_w9eXodkgSf2FaccCR8TU/view?usp=sharing)
+![LinkedIn UI](https://cdn.discordapp.com/attachments/869605450268700704/1023210243389394974/Screenshot_1.png)
 
 ## Project Overview
 This project is an attempt to recreate LinkedIn with limited UI functionalities using React.JS, firebase, Redux. 
