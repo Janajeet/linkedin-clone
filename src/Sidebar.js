@@ -17,7 +17,7 @@ function Sidebar () {
     <div className="sidebar">
         <div className='sidebar__top'>
             <img src='https://images.unsplash.com/photo-1557682257-2f9c37a3a5f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=564&q=80'     alt='' />
-            <Avatar src ={user.photoURL} className='sidebar__avatar'>
+            <Avatar src ={user && user.photoUrl} className='sidebar__avatar'>
                 {user.email[0]}
                 </Avatar>
             <h2>{user.displayName}</h2>

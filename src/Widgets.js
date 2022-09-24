@@ -21,8 +21,8 @@ function widgets() {
             <h2>LinkedIn news</h2>
             <InfoIcon />
         </div>
-        {newsArticle("General trivia","Rony ekta suorer bacha")}
-        {newsArticle("Nation wants to know","Tusher ki meye pabe?")}
+        {newsArticle("General trivia","Queen is no more")}
+        {newsArticle("Nation wants to know","Is the government any good?")}
         {newsArticle("Raiden Shogun wallpaper","https://drive.google.com/file/d/1jx-Rh3dhn9C3DdLQwkurhf755XNqcwst/view?usp=sharing")}
         {newsArticle("My incapabilities","Idk how to pass link to a function so please copy paste the above link for a surprise")}
 

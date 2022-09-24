@@ -23,6 +23,7 @@ function Login() {
             displayName: userAuth.user.name,
             photoUrl: userAuth.user.photoURL,
         }))
+        window.location.reload()
       }).catch(error => alert(error))
     };
     const register = () => {
@@ -34,7 +35,7 @@ function Login() {
       .then((userAuth) => {
         userAuth.user.updateProfile({
           displayName: name,
-          photoUrl: profilePic,
+          photoURL: profilePic,
 
         })
         .then(() => {
@@ -42,9 +43,10 @@ function Login() {
             email: userAuth.user.email,
             uid: userAuth.user.uid,
             displayName: name,
-            photoUrl: profilePic,
+            photoURL: profilePic,
           })
           );
+          window.location.reload()
         });
       })
       .catch((error) => alert(error));
